@@ -1,0 +1,10 @@
+[Unit]
+Description=Supervisor service for ROSinante robot hardware.
+After=multi-user.target
+
+[Service]
+ExecStart=/opt/rosinante/supervisor.py
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
