@@ -20,6 +20,10 @@ The started software modules are put into separate termux sessions for ease of i
 4) At the top of [supervisor.py](/linux/opt/supervisor.py) set the path to the serial port connected to the supervisor module.
 5) Add the [systemd service file](/linux/rosinante_supervisor.service) to your systemd-installation, enable it and start it.
 
+6) Install and configure Tasmota on supervisor module (pick one):
+    * Install version 12  and restore full dump from [backup](/tasmota/Config_supervisor_12.2.0.dmp).
+    * (PREFERRED) Install any (newer) version and run commands from [file](/tasmota/setup.txt).
+
 ## Implemented behaviour
 Start/restart the entire stack in stand-alone mode or with a motion capture node.
 
